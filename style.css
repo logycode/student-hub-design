@@ -274,37 +274,21 @@ main {
 
 .filter {
   width: 100%;
-  display: flex;
+  display: inline-flex;
   gap: 0.875em;
 }
 
-.filter select {
+.filter__class {
+  position: relative;
+}
+
+.filter__class select {
   all: unset;
   padding-block: 0.875rem;
   padding-inline: 0.875rem 4.25rem;
   border: var(--general-border);
   color: var(--accent-color);
 }
-
-.filter__class {
-  position: relative;
-  width: fit-content;
-}
-
-/* .filter__class {
-    posi
-  display: inline-block;
-  padding: 0.875em;
-  border: var(--general-border);
-  color: var(--accent-color);
-}
-
-.filter__class i {
-  width: 30px;
-  aspect-ratio: 1;
-  background-color: var(--accent-color);
-}
-*/
 
 .filter__class i {
   position: absolute;
@@ -332,7 +316,6 @@ main {
   gap: 1.7rem;
   border: var(--general-border);
   border-radius: 2px;
-  /* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 5px 2px 0px 0.5px var(--accent-color);
 }
 
@@ -345,11 +328,4 @@ main {
   background-color: var(--accent-color);
   color: var(--light-color);
   border-radius: 3px;
-}
-
-@media screen and (min-width: 601px) {
-  body {
-    _max-width: 100vw;
-    _background-color: red;
-  }
 }
